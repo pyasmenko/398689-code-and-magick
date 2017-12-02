@@ -1,9 +1,5 @@
 'use strict';
 
-var getRandomColor = function () {
-  return 'rgba(0, 0, 255, ' + (Math.random() * 0.9 + 0.1) + ')';
-}
-
 var getMaxElement = function (arr) {
   var max = -1;
   for (var i = 0; i < arr.length; i++) {
@@ -37,7 +33,7 @@ window.renderStatistics = function (ctx, names, times) {
 
   var getRandomColor = function () {
     return 'rgba(0, 0, 255, ' + (Math.random() * 0.9 + 0.1) + ')';
-  }
+  };
 
   for (var i = 0; i < times.length; i++) {
     if (names[i] === 'Вы') {
